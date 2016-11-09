@@ -39,12 +39,13 @@
                 </div>
 
                 <ul class="site-nav">
+                    {{navigation}}
                     <li class="site-nav-item"><a class="js-ajax-link" title="{{@blog.title}}" href="{{@blog.url}}">Latest Post</a></li>
                     <li class="site-nav-item"><a class="js-ajax-link js-show-index" title="{{@blog.title}}" href="{{@blog.url}}">Browse Posts</a></li>
                     <li class="site-nav-item"><a class="js-ajax-link js-show-index" title="{{@blog.title}}" href="{{@blog.url}}">Maps</a></li>
 
 
-                    {{navigation}}
+
 
                     {{#if @blog.logo}}
                         <li class="site-nav-item"><a href="{{@blog.url}}/rss">RSS</a></li>
